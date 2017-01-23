@@ -50,6 +50,7 @@
 
 		object.options = options;
 		object.element = this;
+		object.selectedIndex = options.initialIndex || 0;
 		object.reloadSlider = function () {
 			$(this.elements).each(function (i, e) {
 				e.removeData("bareSlider");
@@ -61,6 +62,7 @@
 					$e.bind("click", elementClick);
 				}).toArray();
 			(options.onlayout || function () {}).call(this);
+
 		};
 
 		object.selectIndex = function (i) {

@@ -22,6 +22,7 @@
         $slider.data("bareSlider", object);
         object.options = options;
         object.element = this;
+        object.selectedIndex = options.initialIndex || 0;
         object.reloadSlider = function() {
             $(this.elements).each(function(i, e) {
                 e.removeData("bareSlider");
