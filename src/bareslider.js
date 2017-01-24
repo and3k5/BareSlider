@@ -9,6 +9,7 @@
 	// options.childSelector
 	// options.infinite
 	// options.onlayout
+	// options.allowRetrigger
 	// bareSlider.options
 	// bareSlider.selectIndex()
 	// bareSlider.selectValue()
@@ -21,7 +22,7 @@
 		var $this = $(this);
 		var $slider = $this.data("bareSlider");
 
-		if ($slider.elements.indexOf(this) == $slider.selectedIndex)
+		if (!$slider.options.allowRetrigger && $slider.elements.indexOf(this) == $slider.selectedIndex)
 			return;
 		$slider.selectedIndex = $slider.elements.indexOf(this);
 

@@ -5,7 +5,7 @@
     function setSelected(userEvent) {
         var $this = $(this);
         var $slider = $this.data("bareSlider");
-        if ($slider.elements.indexOf(this) == $slider.selectedIndex) return;
+        if (!$slider.options.allowRetrigger && $slider.elements.indexOf(this) == $slider.selectedIndex) return;
         $slider.selectedIndex = $slider.elements.indexOf(this);
         if (typeof $slider.options.onchange != "function") return;
         $($slider.elements).each(function(i, e) {
