@@ -1,5 +1,6 @@
 /**
- * bareSlider by Anders Kjeldsen
+ * bareSlider 0.1 by Anders Kjeldsen
+ * https://github.com/and3k5/BareSlider
  *
  * License: Unlicense
  * http://unlicense.org/
