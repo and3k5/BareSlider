@@ -1,8 +1,8 @@
 /**
  * bareSlider by Anders Kjeldsen
  *
- * License: MIT
- * http://opensource.org/licenses/MIT
+ * License: Unlicense
+ * http://unlicense.org/
  */
 ;(function ($) {
 	// options.onchange
