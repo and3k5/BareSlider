@@ -1,5 +1,5 @@
 # BareSlider
-BareSlider is a very basic slider 'extensions'.
+BareSlider is a very basic slider 'extension'.
 
 BareSlider is meant to be
  - simple and flexible
